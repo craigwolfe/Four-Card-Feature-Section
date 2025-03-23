@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-grey--500: hsl(234, 12%, 34%);
+  --neutral-grey-400: hsl(212, 6%, 44%);
+  --background-color: hsl(0, 0%, 94.9%);
+  --white: hsl(0, 0%, 100%);
+  --font-family: Poppins, sans-serif;
+  --font-weight-light: 100;
+  --font-weight-normal: 200;
+  --font-weight-bold: 400;
+  --font-weight-extra-bold: 600;
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 0.938rem;
+  --font-size-medium: 1rem;
+  --font-size-medium-large: 1.5rem;
+  --font-size-large: 2rem;
+  --font-size-xlarge: 3rem;
+  --spacing-xsmall: 0.50rem;
+  --spacing-small: .75rem;
+  --spacing-medium: 1.25rem;
+  --spacing-medium-large: 1.5rem;
+  --spacing-large: 2rem;
+  --spacing-xlarge: 3rem;
+  --spacing-xxlarge: 4rem;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  background-color: var(--background-color);
+  min-height: 100vh;
+  padding: 1rem;
+  margin-top: 75px;
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 500px;
+}
+
+header h1 {
+  font-weight: var(--font-weight-light);
+  font-style: normal;
+  font-size: var(--font-size-large);
+}
+
+header h2 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-small);
+}
+
+header p {
+  font-size: var(--font-size-xsmall);
+  color: var(--neutral-grey-400);
+  margin-bottom: var(--spacing-large);
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-medium);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  min-height: 200px;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-medium);
+  margin: .75rem 0;
+}
+
+.card h2 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-extra-bold);
+  margin-bottom: var(--spacing-xsmall);
+}
+
+.card p {
+  font-size: var(--font-size-xsmall);
+  color: var(--neutral-grey-400);
+}
+
+img.card-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-small);
+  display: flex;
+  align-self: flex-end;
+}
+
+.inner-card-container .card {
+  margin-bottom: var(--spacing-medium);
+}
+
+.card.first-card {
+  border-top: 5px solid var(--primary-cyan);
+}
+
+.card.second-card {
+  border-top: 5px solid var(--primary-red);
+}
+
+.card.third-card {
+  border-top: 5px solid var(--primary-orange);
+}
+
+.card.last-card {
+  border-top: 5px solid var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem; /* Add padding to prevent content from touching the edges */
+    margin: auto;
+  }
+
+  .card {
+    width: 100%; /* Make the cards take full width */
+    max-width: 300px; /* Optional: Set a max-width to prevent cards from becoming too wide */
+    margin: 0 auto; /* Center the cards within the container */
+  }
+}
