@@ -106,6 +106,7 @@ img.card-icon {
   display: flex;
   align-self: flex-end;
 }
+
 .inner-card-container .card {
   margin-bottom: var(--spacing-medium);
 }
@@ -137,13 +138,17 @@ img.card-icon {
   .card-container {
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem; /* Add padding to prevent content from touching the edges */
+    padding: 0 1rem;
+    /* Add padding to prevent content from touching the edges */
     margin: auto;
   }
 
   .card {
-    width: 100%; /* Make the cards take full width */
-    max-width: 300px; /* Optional: Set a max-width to prevent cards from becoming too wide */
-    margin: 0 auto; /* Center the cards within the container */
+    width: 100%;
+    /* Make the cards take full width */
+    max-width: 300px;
+    /* Optional: Set a max-width to prevent cards from becoming too wide */
+    margin: 0 auto;
+    /* Center the cards within the container */
   }
 }
