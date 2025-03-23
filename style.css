@@ -46,7 +46,7 @@ header {
   text-align: center;
   margin: auto;
   margin-bottom: 2rem;
-  width:100%;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -152,6 +152,7 @@ img.card-icon {
     margin: 0 auto;
     /* Center the cards within the container */
   }
+
   .card.second-card {
     margin-top: var(--spacing-medium);
   }
