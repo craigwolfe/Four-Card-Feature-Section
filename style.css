@@ -106,7 +106,6 @@ img.card-icon {
   display: flex;
   align-self: flex-end;
 }
-
 .inner-card-container .card {
   margin-bottom: var(--spacing-medium);
 }
