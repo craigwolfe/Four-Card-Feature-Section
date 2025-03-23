@@ -39,14 +39,15 @@ body {
   background-color: var(--background-color);
   min-height: 100vh;
   padding: 1rem;
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 header {
   text-align: center;
   margin: auto;
   margin-bottom: 2rem;
-  width: 500px;
+  width:100%;
+  max-width: 500px;
 }
 
 header h1 {
@@ -150,5 +151,8 @@ img.card-icon {
     /* Optional: Set a max-width to prevent cards from becoming too wide */
     margin: 0 auto;
     /* Center the cards within the container */
+  }
+  .card.second-card {
+    margin-top: var(--spacing-medium);
   }
 }
